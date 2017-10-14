@@ -1,0 +1,66 @@
+@charset "utf-8";
+html {
+	font-size: 625%;
+}
+
+body,ul,li,div,p,span,button{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;	
+}
+li {
+	margin: .05rem 0;
+}
+main {
+	overflow: hidden;
+}
+.form-top {
+	height: auto;
+	margin: 1rem auto 0.4rem;
+	border: .02rem solid #ececec;
+	font-weight: 600;
+}
+.font-style {
+	line-height: .25rem;
+}
+.row-a1 {
+	margin: .2rem;
+}
+.form-bottom {
+	height: auto;
+	margin: 0 auto;
+	border: .02rem solid #ececec;
+}
+.mg {
+	margin-top: .1rem;
+}
+.btn-add {
+	float: right;
+	height: .25rem;
+	line-height: .15rem;
+	margin-right: .2rem;
+}
+caption {
+	color: black;
+	padding-left: .2rem;
+	font-weight:600;
+	border-bottom: .02rem solid #ececec;
+}
+thead {
+	font-weight:600;
+}
+th {
+	text-align: center;
+}
+th a {
+	outline: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+	main {
+		width: 100%;
+		overflow: auto;
+	}	
+}

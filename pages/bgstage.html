@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>后台页</title>
+	<link href="../lib/Bootstrap v3.3.7.js" rel="stylesheet">
+	<link rel="stylesheet" href="../css/left-nav.css">
+	<link rel="stylesheet" href="../css/article-list.css">
+
+</head>
+<body>
+	<div class="nav-left">
+		<ul>
+			<span class="title">后台管理系统</span>
+			<li class="nav-title">信息管理<div class="list"></div></li>
+				<div class="drop-down">
+					<li class="drop-down-menu">公司信息</li>
+					<li class="drop-down-menu">职位信息</li>
+				</div>
+			<li class="nav-title">Article管理<div class="list"></div></li>
+				<div class="drop-down">
+					<li class="drop-down-menu"><a href="#/u/list" class="a">Article列表</a></li>
+				</div>
+			<li class="nav-title">推荐管理<div class="list"></div></li>
+				<div class="drop-down">
+					<li class="drop-down-menu">公司信息</li>
+					<li class="drop-down-menu">职位信息</li>
+				</div>
+			<li class="nav-title">后台管理<div class="list"></div></li>
+				<div class="drop-down">
+					<li class="drop-down-menu">公司信息</li>
+					<li class="drop-down-menu">职位信息</li>
+				</div>
+			<li class="nav-title">用户管理<div class="list"></div></li>
+				<div class="drop-down">
+					<li class="drop-down-menu">公司信息</li>
+					<li class="drop-down-menu">职位信息</li>
+				</div>
+			<li class="nav-title">内容管理<div class="list"></div></li>
+				<div class="drop-down">
+					<li class="drop-down-menu">公司信息</li>
+					<li class="drop-down-menu">职位信息</li>
+				</div>
+		</ul>
+	</div>
+	<main ng-view>
+	</main>
+<script src="../js/houtai.js"></script>
+<script src="../lib/angular.min.js"></script>
+<script src="../lib/angular-route.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

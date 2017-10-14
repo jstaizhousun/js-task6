@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Article列表页</title>
+	<link href="../lib/Bootstrap v3.3.7.js" rel="stylesheet">
+   <link rel="stylesheet" href="../css/left-nav.css">
+   <link rel="stylesheet" href="../css/article-list.css">
+</head>
+<body>
+	
+	<main>
+		<div class="container-fluid">
+			<form class="form-top">
+				<div class="row row-a1">
+					<div class="col-sm-2 font-style">
+						<span>发布内容</span>
+					</div>
+					<div class="col-sm-2">
+						<input type="text" style="width:100%">
+					</div>
+					<div class="col-sm-1" style="text-align: center;">
+						<span>-</span>
+					</div>
+					<div class="col-sm-2">
+						<input type="text" style="width:100%">
+					</div>
+					<div class="col-sm-offset-1 col-sm-2 font-style">
+						<span>类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型</span>
+					</div>
+					<div class="col-sm-2">
+						<select style="width:100%; height:.25rem">
+							<option value="">全部</option>
+							<option value="">1</option>
+							<option value="">2</option>
+							<option value="">3</option>
+							<option value="">4</option>
+						</select>
+					</div>		
+				</div>
+				<div class="row row-a1">
+					<div class="col-sm-12 font-style">
+						<span>状&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;态</span>
+					</div>		
+				</div>
+				<div class="row row-a1">
+					<div class="col-sm-3 col-sm-offset-9 font-style">
+						<button class="btn btn-warning">清空</button>
+						<button class="btn btn-success">搜索</button>
+					</div>		
+				</div>
+			</form>
+			<form class="form-bottom">
+				<table class="table">
+					<caption>Article列表<a class="btn btn-success btn-add" href="#/u/deal">新增</a></caption>
+  					<thead>
+     					<tr>
+         					<th>ID</th>
+         					<th>名称</th>
+         					<th>类型</th>
+         					<th>发布时间</th>
+         					<th>修改时间</th>
+         					<th>发布者</th>
+         					<th>状态</th>
+         					<th>操作</th>
+      					</tr>
+   					</thead>
+   					<tbody>
+      					<tr>
+         					<th>1</th>
+         					<th>首页banner图</th>
+         					<th>banner</th>
+         					<th>2017-02-27<br>11:18:13</th>
+         					<th>2017-03-10<br>11:23:02</th>
+         					<th>admin</th>
+         					<th>上线</th>
+         					<th><a>下线</a class="caozuo">&nbsp;&nbsp;<a>编辑</a>&nbsp;&nbsp;<a>删除</a></th>
+      					</tr>
+      					<tr>
+         					<th>2</th>
+         					<th>首页banner图</th>
+         					<th>banner</th>
+         					<th>2017-02-27<br>11:18:13</th>
+         					<th>2017-03-10<br>11:23:02</th>
+         					<th>admin</th>
+         					<th>上线</th>
+         					<th><a>下线</a>&nbsp;&nbsp;<a>编辑</a>&nbsp;&nbsp;<a>删除</a></th>
+      					</tr>
+      					<tr>
+         					<th>3</th>
+         					<th>首页banner图</th>
+         					<th>banner</th>
+         					<th>2017-02-27<br>11:18:13</th>
+         					<th>2017-03-10<br>11:23:02</th>
+         					<th>admin</th>
+         					<th>上线</th>
+         					<th><a>下线</a>&nbsp;&nbsp;<a>编辑</a>&nbsp;&nbsp;<a>删除</a></th>
+      					</tr>
+      					<tr>
+         					<th>4</th>
+         					<th>首页banner图</th>
+         					<th>banner</th>
+         					<th>2017-02-27<br>11:18:13</th>
+         					<th>2017-03-10<br>11:23:02</th>
+         					<th>admin</th>
+         					<th>上线</th>
+         					<th><a>下线</a>&nbsp;&nbsp;<a>编辑</a>&nbsp;&nbsp;<a>删除</a></th>
+      					</tr>
+      					<tr>
+         					<th>5</th>
+         					<th>首页banner图</th>
+         					<th>banner</th>
+         					<th>2017-02-27<br>11:18:13</th>
+         					<th>2017-03-10<br>11:23:02</th>
+         					<th>admin</th>
+         					<th>上线</th>
+         					<th><a>下线</a>&nbsp;&nbsp;<a>编辑</a>&nbsp;&nbsp;<a>删除</a></th>
+      					</tr>
+      					<tr>
+         					<th>6</th>
+         					<th>首页banner图</th>
+         					<th>banner</th>
+         					<th>2017-02-27<br>11:18:13</th>
+         					<th>2017-03-10<br>11:23:02</th>
+         					<th>admin</th>
+         					<th>上线</th>
+         					<th><a>下线</a>&nbsp;&nbsp;<a>编辑</a>&nbsp;&nbsp;<a>删除</a></th>
+      					</tr>
+      					<tr>
+         					<th>7</th>
+         					<th>首页banner图</th>
+         					<th>banner</th>
+         					<th>2017-02-27<br>11:18:13</th>
+         					<th>2017-03-10<br>11:23:02</th>
+         					<th>admin</th>
+         					<th>上线</th>
+         					<th><a>下线</a>&nbsp;&nbsp;<a>编辑</a>&nbsp;&nbsp;<a>删除</a></th>
+      					</tr>
+   					</tbody>
+				</table>
+			</form>	
+		</div>
+	</main>
+<script src="../js/houtai.js"></script>
+<script src="../lib/angular.min.js"></script>
+<script src="../lib/angular-route.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

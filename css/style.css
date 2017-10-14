@@ -1,0 +1,126 @@
+/*reset*/
+html,body,header,footer,main,section,article,nav,p,h1,h2,h3,h4,h5,h6,a,ul,ol,li,div,span,img,button,input,select{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+button{
+    display: block;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+input{
+    outline: none;
+}
+
+/*style*/
+html,body{
+    height: 100%;
+}
+body{
+    background: url(../img/bg.jpg) no-repeat center;
+    background-size: cover;
+}
+.login-box{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 368px;
+    height: 315px;
+    transform: translate(-50%,-50%);
+    background: rgba(255,255,255,.8);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+input{
+    display: block;
+    height: 46px;
+    width: 286px;
+    margin: 0 auto;
+    padding-left: 50px;
+    font-size: 18px;
+    line-height: 46px;
+    color: #fca73a;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+}
+input.login-user{
+    margin-top: 84px;
+    margin-bottom: 15px;
+    background: url(../img/loginuser.png) no-repeat 14px 10px;
+}
+input.login-user-active{
+    margin-top: 84px;
+    margin-bottom: 15px;
+    border: 1px solid #fca73a;
+    background: url(../img/loginuser-active.png) no-repeat 14px 10px;
+}
+input.login-pwd{
+    background: url(../img/loginpsd.png) no-repeat 14px 10px;
+}
+input.login-pwd-active{
+    border: 1px solid #fca73a;
+    background: url(../img/loginpsd-active.png) no-repeat 14px 10px;
+}
+button{
+    height: 48px;
+    width: 338px;
+    margin: 0 auto;
+    background: #5189c2;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 48px;
+    border-radius: 6px;
+}
+.hint{
+    height: 32px;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #f44336;
+    line-height: 32px;
+}
+.hint-true{
+	height: 32px;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 16px;
+    color: green;
+    line-height: 32px;
+}
+.img{
+    position: absolute;
+    top: -35px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 -3px 7px rgba(160,160,160,.5);
+    background: url(../img/login-logo.png) no-repeat;
+}
+@media screen and (max-width: 768px){
+    .login-box{
+        width: 90%;
+    }
+    input{
+        width: calc(80% - 50px);
+    }
+    button{
+        width: 80%;
+    }
+}
